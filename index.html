@@ -109,10 +109,12 @@
     }
 
     .card:nth-child(1) { animation-delay: 0.1s; }
-    .card:nth-child(2) { animation-delay: 0.2s; }
-    .card:nth-child(3) { animation-delay: 0.3s; }
-    .card:nth-child(4) { animation-delay: 0.4s; }
-    .card:nth-child(5) { animation-delay: 0.5s; }
+    .card:nth-child(2) { animation-delay: 0.15s; }
+    .card:nth-child(3) { animation-delay: 0.2s; }
+    .card:nth-child(4) { animation-delay: 0.25s; }
+    .card:nth-child(5) { animation-delay: 0.3s; }
+    .card:nth-child(6) { animation-delay: 0.35s; }
+    .card:nth-child(7) { animation-delay: 0.4s; }
 
     .card:hover {
       transform: translateY(-6px);
@@ -151,6 +153,15 @@
       font-weight: 400;
       line-height: 1.4;
       color: var(--text);
+    }
+
+    /* ── Optional course description ── */
+    .card-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--text-muted);
     }
 
     .card-cta {
@@ -199,29 +210,68 @@
 
     <div class="gallery">
 
-      <a class="card" href="https://www.jmcinally.co.uk/portfolio-hulu-flow" target="_blank" rel="noopener">
-        <img class="card-image" src="images/hulu.png" alt="Hulu Bundle Flow" />
+      <a class="card" href="https://www.jmcinally.co.uk/portfolio-xbox" target="_blank" rel="noopener">
+        <img class="card-image" src="images/xbox.png" alt="Game Pass Bundle" />
         <div class="card-body">
           <span class="card-label">Course 01</span>
-          <h2 class="card-title">Hulu Bundle Flow</h2>
+          <h2 class="card-title">Game Pass Bundle</h2>
+          <!-- Add a description below. Delete this comment and the empty p tag if you don't want one. -->
+          <p class="card-desc">This is an interactive segment I put together after just 24 hours notice of the bundle launch. I collected the screenshots on my own PC/Xbox at midnight!</p>
+          <span class="card-cta">View Course</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.jmcinally.co.uk/portfolio-hulu-flow" target="_blank" rel="noopener">
+        <img class="card-image" src="images/hulu.png" alt="Hulu Bundle Sign-Up Flow" />
+        <div class="card-body">
+          <span class="card-label">Course 02</span>
+          <h2 class="card-title">Hulu Bundle Sign-Up Flow</h2>
+          <!-- Add a description below. Delete this comment and the empty p tag if you don't want one. -->
+          <p class="card-desc">Another segment designed to embed within a larger course. This covers how new and existing users could sign up to the latest Hulu bundle.</p>
           <span class="card-cta">View Course</span>
         </div>
       </a>
 
       <a class="card" href="https://www.jmcinally.co.uk/portfolio-family-migration" target="_blank" rel="noopener">
-        <img class="card-image" src="images/family.png" alt="Premium Family Migration Flow" />
+        <img class="card-image" src="images/family.png" alt="Premium Family Migration" />
         <div class="card-body">
-          <span class="card-label">Course 02</span>
-          <h2 class="card-title">Premium Family Migration Flow</h2>
+          <span class="card-label">Course 03</span>
+          <h2 class="card-title">Premium Family Migration</h2>
+          <!-- Add a description below. Delete this comment and the empty p tag if you don't want one. -->
+          <p class="card-desc">Embedded segment outlining how family plan owners would move to the new Premium Family subscription.</p>
           <span class="card-cta">View Course</span>
         </div>
       </a>
 
       <a class="card" href="https://www.jmcinally.co.uk/portfolio-template" target="_blank" rel="noopener">
-        <img class="card-image" src="images/template.png" alt="Flow Template" />
+        <img class="card-image" src="images/template.png" alt="User Flow Template" />
         <div class="card-body">
-          <span class="card-label">Course 03</span>
-          <h2 class="card-title">Flow Template</h2>
+          <span class="card-label">Course 04</span>
+          <h2 class="card-title">User Flow Template</h2>
+          <!-- Add a description below. Delete this comment and the empty p tag if you don't want one. -->
+          <p class="card-desc">This is a quick and simple template file I put together to help speed along the development of 'user flow' demonstrations that we embedded into Rise courses.</p>
+          <span class="card-cta">View Course</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.jmcinally.co.uk/portfolio-boleto" target="_blank" rel="noopener">
+        <img class="card-image" src="images/boleto.png" alt="Boleto Refunds" />
+        <div class="card-body">
+          <span class="card-label">Course 05</span>
+          <h2 class="card-title">Boleto Refunds</h2>
+          <!-- Add a description below. Delete this comment and the empty p tag if you don't want one. -->
+          <p class="card-desc">A snappy training designed to remind advisors how to correctly refund and cancel payments made with Boleto.</p>
+          <span class="card-cta">View Course</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.jmcinally.co.uk/portfolio-cowbell" target="_blank" rel="noopener">
+        <img class="card-image" src="images/cowbell.png" alt="Intro to Cowbell" />
+        <div class="card-body">
+          <span class="card-label">Course 06</span>
+          <h2 class="card-title">Intro to Cowbell</h2>
+          <!-- Add a description below. Delete this comment and the empty p tag if you don't want one. -->
+          <p class="card-desc">This blended course was used during onboarding to explain the concept of Cowbell. It features paths for both learners and facilitators, so that the blended activities were always ready at hand.</p>
           <span class="card-cta">View Course</span>
         </div>
       </a>
@@ -229,17 +279,10 @@
       <a class="card" href="https://www.jmcinally.co.uk/portfolio-guru-refresher" target="_blank" rel="noopener">
         <img class="card-image" src="images/guru.png" alt="Guru Refresher" />
         <div class="card-body">
-          <span class="card-label">Course 04</span>
+          <span class="card-label">Course 07</span>
           <h2 class="card-title">Guru Refresher</h2>
-          <span class="card-cta">View Course</span>
-        </div>
-      </a>
-
-      <a class="card" href="https://www.jmcinally.co.uk/portfolio-course" target="_blank" rel="noopener">
-        <img class="card-image" src="images/portfolio.png" alt="Portfolio Course" />
-        <div class="card-body">
-          <span class="card-label">Course 05</span>
-          <h2 class="card-title">Portfolio Course</h2>
+          <!-- Add a description below. Delete this comment and the empty p tag if you don't want one. -->
+          <p class="card-desc">This course goes into detail about how to use Guru, the KMS that Spotify CS rolled out in 2018. The challenge was to make content in-depth enough for beginners, but engaging for users who piloted the tool.</p>
           <span class="card-cta">View Course</span>
         </div>
       </a>
@@ -250,6 +293,6 @@
   <footer style="text-align:center; padding: 2rem 1rem 2.5rem; font-family: 'Inter', sans-serif; font-size: 0.65rem; font-weight: 300; letter-spacing: 0.1em; color: #3d3530;">
     Disclaimer: Content has been sanitised for portfolio use
   </footer>
-  
+
 </body>
 </html>
